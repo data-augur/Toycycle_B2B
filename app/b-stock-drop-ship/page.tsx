@@ -10,7 +10,7 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">B-Stock Drop Ship — Without Liquidation Risk</h1>
+              <h1 className="tc-home-hero-title">B-Stock Drop Ship</h1>
               <p className="tc-home-hero-subtitle">Sell open-box and excess inventory directly to trusted families — with no warehousing, no fulfillment overhead, and full brand control.</p>
               <div className="tc-home-hero-ctas">
                 <Link href="/contact" className="tc-btn tc-btn-primary">Get Started</Link>
@@ -30,7 +30,56 @@ export default function BStockDropShip() {
         </div>
       </section>
 
-      {/* Second Section - Partners */}
+      {/* What is Section */}
+      <section className="tc-home-section-two">
+        <div className="tc-content-container">
+          <div className="tc-home-section-two-content">
+            <h2 className="tc-section-title">What is Toycycle B-Stock DropShip?</h2>
+            <p className="tc-home-section-text">
+              Toycycle Inventory Connect integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Brands Choose Section */}
+      <section className="tc-home-section-difference">
+        <div className="tc-content-container">
+          <div className="tc-difference-content">
+            <div className="tc-difference-label">Why Choose Us</div>
+            <h2 className="tc-difference-headline">Why Brands Choose Toycycle B-Stock Drop Ship</h2>
+            <div className="tc-difference-pillars-grid">
+              <div className="tc-difference-pillar-card">
+                <div className="tc-difference-pillar-icon">⚡</div>
+                <h3 className="tc-difference-pillar-title">Faster Sell-Through w/o Channel Risk</h3>
+                <p className="tc-difference-pillar-text">List surplus inventory in a marketplace where buyers are motivated by quality and sustainability, not bargain chasing.</p>
+              </div>
+              <div className="tc-difference-pillar-card">
+                <div className="tc-difference-pillar-icon">🛡️</div>
+                <h3 className="tc-difference-pillar-title">Brand Value & Pricing Protection</h3>
+                <p className="tc-difference-pillar-text">Products appear in a curated, brand-safe environment — no off-price dumping or unauthorized resale.</p>
+              </div>
+              <div className="tc-difference-pillar-card">
+                <div className="tc-difference-pillar-icon">💼</div>
+                <h3 className="tc-difference-pillar-title">Brands Maintain Operational Control</h3>
+                <p className="tc-difference-pillar-text">You keep inventory and fulfillment in-house while Toycycle drives visibility, traffic, and conversion.</p>
+              </div>
+              <div className="tc-difference-pillar-card">
+                <div className="tc-difference-pillar-icon">💰</div>
+                <h3 className="tc-difference-pillar-title">Higher Returns Than Liquidation</h3>
+                <p className="tc-difference-pillar-text">Sales often capture significantly more revenue than traditional liquidation channels—without additional operational burden.</p>
+              </div>
+              <div className="tc-difference-pillar-card">
+                <div className="tc-difference-pillar-icon">👥</div>
+                <h3 className="tc-difference-pillar-title">Qualified Customer Leads</h3>
+                <p className="tc-difference-pillar-text">Connect with high-intent customers you can engage in future campaigns, DTC promotions, or loyalty programs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fourth Section - Partners */}
       <section className="tc-home-section-three">
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
@@ -166,55 +215,6 @@ export default function BStockDropShip() {
                     className="tc-partner-img"
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What is Section */}
-      <section className="tc-home-section-two">
-        <div className="tc-content-container">
-          <div className="tc-home-section-two-content">
-            <h2 className="tc-section-title">What is Toycycle B-Stock DropShip?</h2>
-            <p className="tc-home-section-text">
-              Toycycle Inventory Connect integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Brands Choose Section */}
-      <section className="tc-home-section-difference">
-        <div className="tc-content-container">
-          <div className="tc-difference-content">
-            <div className="tc-difference-label">Why Choose Us</div>
-            <h2 className="tc-difference-headline">Why Brands Choose Toycycle B-Stock Drop Ship</h2>
-            <div className="tc-difference-pillars-grid">
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">⚡</div>
-                <h3 className="tc-difference-pillar-title">Faster Sell-Through w/o Channel Risk</h3>
-                <p className="tc-difference-pillar-text">List surplus inventory in a marketplace where buyers are motivated by quality and sustainability, not bargain chasing.</p>
-              </div>
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">🛡️</div>
-                <h3 className="tc-difference-pillar-title">Brand Value & Pricing Protection</h3>
-                <p className="tc-difference-pillar-text">Products appear in a curated, brand-safe environment — no off-price dumping or unauthorized resale.</p>
-              </div>
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">💼</div>
-                <h3 className="tc-difference-pillar-title">Brands Maintain Operational Control</h3>
-                <p className="tc-difference-pillar-text">You keep inventory and fulfillment in-house while Toycycle drives visibility, traffic, and conversion.</p>
-              </div>
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">💰</div>
-                <h3 className="tc-difference-pillar-title">Higher Returns Than Liquidation</h3>
-                <p className="tc-difference-pillar-text">Sales often capture significantly more revenue than traditional liquidation channels—without additional operational burden.</p>
-              </div>
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">👥</div>
-                <h3 className="tc-difference-pillar-title">Qualified Customer Leads</h3>
-                <p className="tc-difference-pillar-text">Connect with high-intent customers you can engage in future campaigns, DTC promotions, or loyalty programs.</p>
               </div>
             </div>
           </div>

@@ -178,7 +178,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-problem-content">
             <div className="tc-problem-label">The Problem</div>
-            <h2 className="tc-problem-headline">Demand exists. The challenge is getting inventory to the right channel.</h2>
+            <h2 className="tc-problem-headline">Demand exists.<br />The challenge is getting inventory to the right channel.</h2>
             <div className="tc-problem-points-list">
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">📉</div>
