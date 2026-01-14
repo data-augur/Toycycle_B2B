@@ -30,7 +30,149 @@ export default function ReturnsManagement() {
         </div>
       </section>
 
-      {/* Second Section */}
+      {/* Second Section - Partners */}
+      <section className="tc-home-section-three">
+        <div className="tc-content-container">
+          <div className="tc-home-section-three-content">
+            <p className="tc-home-community-text">
+              Built for toy & baby brands with safety, compliance, and brand control at the core
+            </p>
+            <div className="tc-partners-wrapper">
+              <div className="tc-partners-grid">
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/HABA_Logo.webp" 
+                    alt="HABA" 
+                    width={220}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/waytoplay_logo.webp" 
+                    alt="waytoplay" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Ekobo.webp" 
+                    alt="Ekobo" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Janod_Logo.webp" 
+                    alt="Janod" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Loog_Logo.webp" 
+                    alt="Loog" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/PlanToys_Logo.webp" 
+                    alt="PlanToys" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/tytantoys_logo.webp" 
+                    alt="Tytan Toys" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                {/* Duplicate logos for seamless loop */}
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/HABA_Logo.webp" 
+                    alt="HABA" 
+                    width={220}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/waytoplay_logo.webp" 
+                    alt="waytoplay" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Ekobo.webp" 
+                    alt="Ekobo" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Janod_Logo.webp" 
+                    alt="Janod" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/Loog_Logo.webp" 
+                    alt="Loog" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/PlanToys_Logo.webp" 
+                    alt="PlanToys" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+                <div className="tc-partner-logo">
+                  <Image 
+                    src="/images/partners/tytantoys_logo.webp" 
+                    alt="Tytan Toys" 
+                    width={180}
+                    height={90}
+                    className="tc-partner-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Third Section */}
       <section style={{padding: '60px 0', backgroundColor: 'var(--tc-light-green)'}}>
         <div className="tc-content-container">
           <div style={{maxWidth: '900px', margin: '0 auto', textAlign: 'center'}}>
