@@ -16,6 +16,16 @@ export default function ReturnsManagement() {
                 <Link href="/contact" className="tc-btn tc-btn-primary">Contact Us</Link>
               </div>
             </div>
+            <div className="tc-home-hero-image">
+              <Image 
+                src="/images/partners/Hero_Returns.webp" 
+                alt="Toycycle Returns Management" 
+                width={600}
+                height={400}
+                className="tc-hero-img"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -38,7 +48,8 @@ export default function ReturnsManagement() {
       {/* We Do The Heavy Lifting Section */}
       <section className="tc-returns-process-section" style={{backgroundColor: '#ffffff'}}>
         <div className="tc-content-container">
-          <div className="tc-returns-process-container">
+          <div className="tc-returns-process-container" style={{textAlign: 'center'}}>
+            <div className="tc-problem-label" style={{display: 'inline-block', marginBottom: '24px'}}>Our Process</div>
             <h2 className="tc-returns-heading">We Do The Heavy Lifting</h2>
             <div className="tc-returns-process">
               <div className="tc-returns-step">
@@ -113,6 +124,7 @@ export default function ReturnsManagement() {
       <section className="tc-home-section-difference" style={{backgroundColor: 'var(--tc-light-green)'}}>
         <div className="tc-content-container">
           <div className="tc-difference-content">
+            <div className="tc-difference-label">Why Choose Us</div>
             <h2 className="tc-difference-headline">Why Choose Toycycle</h2>
             <div className="tc-difference-pillars-grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))'}}>
               <div className="tc-difference-pillar-card">

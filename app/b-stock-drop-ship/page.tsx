@@ -18,7 +18,7 @@ export default function BStockDropShip() {
             </div>
             <div className="tc-home-hero-image">
               <Image 
-                src="/images/renew-replay.webp" 
+                src="/images/partners/Hero_DropShip.webp" 
                 alt="B-Stock Drop Ship" 
                 width={600}
                 height={400}
@@ -43,9 +43,10 @@ export default function BStockDropShip() {
       </section>
 
       {/* Why Brands Choose Section */}
-      <section className="tc-home-section-difference" style={{background: 'linear-gradient(180deg, var(--tc-light-green) 0%, #ffffff 100%)'}}>
+      <section className="tc-home-section-difference">
         <div className="tc-content-container">
           <div className="tc-difference-content">
+            <div className="tc-difference-label">Why Choose Us</div>
             <h2 className="tc-difference-headline">Why Brands Choose Toycycle B-Stock Drop Ship</h2>
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
@@ -80,7 +81,8 @@ export default function BStockDropShip() {
 
       {/* How It Works Section */}
       <section className="tc-how-it-works">
-        <div className="tc-content-container">
+        <div className="tc-content-container" style={{textAlign: 'center'}}>
+          <div className="tc-problem-label" style={{display: 'inline-block', marginBottom: '24px'}}>How It Works</div>
           <h2 className="tc-section-title">How It Works</h2>
           <div className="tc-how-it-works-grid">
             <div className="tc-how-it-works-card">
@@ -124,6 +126,7 @@ export default function BStockDropShip() {
       <section className="tc-home-section-problem">
         <div className="tc-content-container">
           <div className="tc-problem-content">
+            <div className="tc-problem-label">What Sets Us Apart</div>
             <h2 className="tc-problem-headline">What Sets Toycycle Apart</h2>
             <div className="tc-problem-points-list">
               <div className="tc-problem-point-row">
@@ -153,10 +156,10 @@ export default function BStockDropShip() {
       </section>
 
       {/* Looking for More Managed Solution Section */}
-      <section className="tc-solutions" style={{background: '#ffffff'}}>
+      <section className="tc-solutions">
         <div className="tc-content-container">
           <h2 className="tc-section-title">Looking for a More Managed Solution?</h2>
-          <p className="tc-home-community-text" style={{textAlign: 'center', marginBottom: '40px'}}>
+          <p className="tc-home-community-text" style={{textAlign: 'center', marginBottom: '40px', maxWidth: '900px', margin: '0 auto 40px'}}>
             Not every inventory challenge fits a single model. If you&apos;re managing returns, open-box inventory, or more complex resale needs, Toycycle offers additional programs designed to take the operational burden off your team.
           </p>
           <div className="tc-solutions-grid" style={{gridTemplateColumns: '1fr 1fr', maxWidth: '1000px', margin: '0 auto', justifyContent: 'center'}}>
@@ -193,7 +196,7 @@ export default function BStockDropShip() {
       </section>
 
       {/* FAQ Section */}
-      <section className="tc-faq" style={{background: 'var(--tc-light-green)'}}>
+      <section className="tc-faq">
         <div className="tc-content-container tc-center">
           <h2 className="tc-section-title">Frequently Asked Questions</h2>
           <div className="tc-faq-grid">

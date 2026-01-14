@@ -10,7 +10,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">Inventory Recovery & Resale Infrastructure for Toy & Baby Brands</h1>
+              <h1 className="tc-home-hero-title">Inventory Recovery & Resale Infrastructure for Toy</h1>
               <p className="tc-home-hero-subtitle">Recover value from B-stock, returns, and excess inventory — without liquidation, grey markets, or brand risk.</p>
               <div className="tc-home-hero-ctas">
                 <Link href="/contact" className="tc-btn tc-btn-primary">👉 Talk to Our Team</Link>
@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className="tc-home-hero-image">
               <Image 
-                src="/images/Toycycle_Hero.webp" 
+                src="/images/partners/Hero_Home.webp" 
                 alt="Inventory Recovery & Resale Infrastructure" 
                 width={600}
                 height={400}
@@ -44,8 +44,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/HABA_Logo.webp" 
                     alt="HABA" 
-                    width={160}
-                    height={80}
+                    width={220}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -53,8 +53,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/waytoplay_logo.webp" 
                     alt="waytoplay" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -62,8 +62,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Ekobo.webp" 
                     alt="Ekobo" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -71,8 +71,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Janod_Logo.webp" 
                     alt="Janod" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -80,8 +80,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Loog_Logo.webp" 
                     alt="Loog" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -89,8 +89,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/PlanToys_Logo.webp" 
                     alt="PlanToys" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -98,8 +98,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/tytantoys_logo.webp" 
                     alt="Tytan Toys" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -108,8 +108,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/HABA_Logo.webp" 
                     alt="HABA" 
-                    width={160}
-                    height={80}
+                    width={220}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -117,8 +117,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/waytoplay_logo.webp" 
                     alt="waytoplay" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -126,8 +126,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Ekobo.webp" 
                     alt="Ekobo" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -135,8 +135,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Janod_Logo.webp" 
                     alt="Janod" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -144,8 +144,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/Loog_Logo.webp" 
                     alt="Loog" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -153,8 +153,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/PlanToys_Logo.webp" 
                     alt="PlanToys" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -162,8 +162,8 @@ export default function Home() {
                   <Image 
                     src="/images/partners/tytantoys_logo.webp" 
                     alt="Tytan Toys" 
-                    width={120}
-                    height={60}
+                    width={180}
+                    height={90}
                     className="tc-partner-img"
                   />
                 </div>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-problem-content">
             <div className="tc-problem-label">The Problem</div>
-            <h2 className="tc-problem-headline">Inventory Loss Is an Operational Failure — Not a Demand Problem</h2>
+            <h2 className="tc-problem-headline">Demand exists. The challenge is getting inventory to the right channel.</h2>
             <div className="tc-problem-points-list">
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">📉</div>
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-difference-content">
             <div className="tc-difference-label">The Toycycle Difference</div>
-            <h2 className="tc-difference-headline">Purpose-Built Inventory Recovery for a High-Trust Category</h2>
+            <h2 className="tc-difference-headline">Purpose-Built Inventory Recovery</h2>
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">🛡️</div>
@@ -223,12 +223,8 @@ export default function Home() {
                 <h3 className="tc-difference-pillar-title">Built-In Demand</h3>
                 <p className="tc-difference-pillar-text">From a trusted parent marketplace</p>
               </div>
-              <div className="tc-difference-pillar-card">
-                <div className="tc-difference-pillar-icon">⚡</div>
-                <h3 className="tc-difference-pillar-title">Flexible Models</h3>
-                <p className="tc-difference-pillar-text">Starting with zero-overhead dropship</p>
-              </div>
             </div>
+            <p className="tc-difference-footer-text">Choose the level of support you need — from no-overhead dropship to end-to-end resale management.</p>
           </div>
         </div>
       </section>
@@ -272,7 +268,7 @@ export default function Home() {
                   <h3 className="tc-solution-title">Returns Management</h3>
                 </div>
                 <p className="tc-solution-description">
-                  Turn returns into recoverable inventory — without internal reprocessing.
+                  Seamlessly expand your operations team.
                 </p>
                 <ul className="tc-solution-features">
                   <li>Full-Cycle Logistics</li>
@@ -303,47 +299,6 @@ export default function Home() {
                 <div className="tc-solution-cta">
                   <Link href="/contact" className="tc-btn tc-btn-outline">Learn more →</Link>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who This Is For Section */}
-      <section className="tc-who-section">
-        <div className="tc-content-container">
-          <h2 className="tc-section-title">Who This Is For</h2>
-          <div className="tc-who-grid">
-            <div className="tc-who-card">
-              <div className="tc-who-card-inner">
-                <div className="tc-who-icon-wrapper">
-                  <div className="tc-who-icon">🧸</div>
-                </div>
-                <h3 className="tc-who-title">Toy & baby gear manufacturers</h3>
-              </div>
-            </div>
-            <div className="tc-who-card">
-              <div className="tc-who-card-inner">
-                <div className="tc-who-icon-wrapper">
-                  <div className="tc-who-icon">🛒</div>
-                </div>
-                <h3 className="tc-who-title">DTC-first brands</h3>
-              </div>
-            </div>
-            <div className="tc-who-card">
-              <div className="tc-who-card-inner">
-                <div className="tc-who-icon-wrapper">
-                  <div className="tc-who-icon">🌱</div>
-                </div>
-                <h3 className="tc-who-title">Premium & sustainability-led brands</h3>
-              </div>
-            </div>
-            <div className="tc-who-card">
-              <div className="tc-who-card-inner">
-                <div className="tc-who-icon-wrapper">
-                  <div className="tc-who-icon">📊</div>
-                </div>
-                <h3 className="tc-who-title">Brands with growing returns or B-stock exposure</h3>
               </div>
             </div>
           </div>
@@ -408,6 +363,15 @@ export default function Home() {
 
             <div className="tc-testimonial-card">
               <div className="tc-testimonial-header">
+                <div className="tc-testimonial-logo">
+                  <Image 
+                    src="/images/partners/Janod_Logo.webp" 
+                    alt="Janod" 
+                    width={120}
+                    height={60}
+                    className="tc-testimonial-logo-img"
+                  />
+                </div>
                 <div className="tc-testimonial-quote">&ldquo;Positive Impact&rdquo;</div>
               </div>
               <p className="tc-testimonial-text">
@@ -428,7 +392,13 @@ export default function Home() {
       <section className="tc-home-cta">
         <div className="tc-content-container tc-center">
           <h2 className="tc-cta-title">Start Recovering Value from Your Inventory</h2>
-          <Link href="/contact" className="tc-btn tc-btn-primary">Talk to Our Team</Link>
+          <p className="tc-cta-text">
+            Join leading toy and baby brands who trust Toycycle to transform returns and excess inventory into revenue—without the risks of liquidation or grey markets.
+          </p>
+          <div className="tc-cta-buttons">
+            <Link href="/contact" className="tc-btn tc-btn-primary">Talk to Our Team</Link>
+            <Link href="#services" className="tc-btn tc-btn-secondary">Explore Solutions</Link>
+          </div>
         </div>
       </section>
 

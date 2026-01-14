@@ -16,13 +16,24 @@ export default function ResaleAsAService() {
                 <Link href="/contact" className="tc-btn tc-btn-primary">Let&apos;s Talk</Link>
               </div>
             </div>
+            <div className="tc-home-hero-image">
+              <Image 
+                src="/images/partners/Hero_Resale.webp" 
+                alt="Powering Resale for Toy Brands" 
+                width={600}
+                height={400}
+                className="tc-hero-img"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Resale Imperative Section */}
       <section className="tc-resale-imperative">
-        <div className="tc-content-container">
+        <div className="tc-content-container" style={{textAlign: 'center'}}>
+          <div className="tc-problem-label" style={{display: 'inline-block', marginBottom: '24px'}}>The Opportunity</div>
           <h2 className="tc-section-title">Resale Has Become a Strategic Imperative</h2>
           <p className="tc-home-section-text" style={{textAlign: 'center', maxWidth: '900px', margin: '0 auto 16px'}}>
             As tariffs rise and customer values shift, brands need more than liquidation.
@@ -260,6 +271,7 @@ export default function ResaleAsAService() {
       <section className="tc-home-section-problem" style={{background: 'var(--tc-light-green)'}}>
         <div className="tc-content-container">
           <div className="tc-problem-content">
+            <div className="tc-problem-label">Why Trust Us</div>
             <h2 className="tc-problem-headline">Why Leading Brands Trust Toycycle</h2>
             <p className="tc-home-community-text" style={{textAlign: 'center', marginBottom: '50px', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto'}}>
               We deliver seamless, sustainable resale that protects your brand and delights eco-conscious customers.

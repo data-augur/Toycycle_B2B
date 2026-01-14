@@ -12,6 +12,7 @@ export default function Header() {
   const handleMouseEnter = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
+      timeoutRef.current = null
     }
     setIsSolutionsOpen(true)
   }
@@ -19,7 +20,12 @@ export default function Header() {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setIsSolutionsOpen(false)
-    }, 150)
+    }, 200)
+  }
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    setIsSolutionsOpen(!isSolutionsOpen)
   }
 
   useEffect(() => {
@@ -53,7 +59,8 @@ export default function Header() {
           >
             <button 
               className="tc-nav-link tc-nav-dropdown-toggle"
-              onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+              onClick={handleClick}
+              onMouseEnter={handleMouseEnter}
               aria-expanded={isSolutionsOpen}
               aria-haspopup="true"
             >
@@ -61,7 +68,11 @@ export default function Header() {
               <span className="tc-dropdown-arrow">▼</span>
             </button>
             {isSolutionsOpen && (
-              <div className="tc-dropdown-menu">
+              <div 
+                className="tc-dropdown-menu"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Link 
                   href="/b-stock-drop-ship" 
                   className="tc-dropdown-item"
