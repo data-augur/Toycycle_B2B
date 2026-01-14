@@ -10,7 +10,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">Inventory Recovery & Resale Infrastructure for Toy</h1>
+              <h1 className="tc-home-hero-title">Inventory Recovery & Resale Infrastructure for Toy Brands</h1>
               <p className="tc-home-hero-subtitle">Recover value from B-stock, returns, and excess inventory — without liquidation, grey markets, or brand risk.</p>
               <div className="tc-home-hero-ctas">
                 <Link href="/contact" className="tc-btn tc-btn-primary">👉 Talk to Our Team</Link>
@@ -255,7 +255,7 @@ export default function Home() {
                   <li>Reach real families, not liquidators</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/contact" className="tc-btn tc-btn-primary">Get Started →</Link>
+                  <Link href="/b-stock-drop-ship" className="tc-btn tc-btn-primary">Learn More →</Link>
                 </div>
               </div>
             </div>
@@ -276,7 +276,7 @@ export default function Home() {
                   <li>Resale by Toycycle</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/contact" className="tc-btn tc-btn-outline">Learn more →</Link>
+                  <Link href="/returns-management" className="tc-btn tc-btn-outline">Learn more →</Link>
                 </div>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Home() {
                   <li>Growth Through Resale</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/contact" className="tc-btn tc-btn-outline">Learn more →</Link>
+                  <Link href="/resale-as-a-service" className="tc-btn tc-btn-outline">Learn more →</Link>
                 </div>
               </div>
             </div>

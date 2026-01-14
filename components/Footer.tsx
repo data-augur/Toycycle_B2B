@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="tc-footer-links">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/contact">Contact</Link></li>
-              <li><a href="https://toycycle.co" target="_blank" rel="noopener noreferrer">B-to-C Platform</a></li>
+              <li><a href="https://toycycle.co" target="_blank" rel="noopener noreferrer">Consumer Platform</a></li>
             </ul>
           </div>
 
