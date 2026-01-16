@@ -32,18 +32,16 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setSubmitStatus("idle");
 
-    // Here you would typically send the form data to your backend/API
-    // For now, we'll simulate a submission
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-      // In a real implementation, you would do:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // })
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
 
       setSubmitStatus("success");
       setFormData({
@@ -55,6 +53,7 @@ export default function ContactPage() {
         interest: "",
       });
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);

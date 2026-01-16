@@ -33,10 +33,10 @@ export default function BStockDropShip() {
       {/* What is Section */}
       <section className="tc-home-section-two">
         <div className="tc-content-container">
-          <div className="tc-home-section-two-content">
+            <div className="tc-home-section-two-content">
             <h2 className="tc-section-title">What is Toycycle B-Stock DropShip?</h2>
-            <p className="tc-home-section-text">
-              Toycycle Inventory Connect integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
+              <p className="tc-home-section-text">
+              Toycycle B-Stock Drop Ship integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function BStockDropShip() {
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">⚡</div>
-                <h3 className="tc-difference-pillar-title">Faster Sell-Through w/o Channel Risk</h3>
+                <h3 className="tc-difference-pillar-title">Faster Sell-Thru - No Channel Risk</h3>
                 <p className="tc-difference-pillar-text">List surplus inventory in a marketplace where buyers are motivated by quality and sustainability, not bargain chasing.</p>
               </div>
               <div className="tc-difference-pillar-card">
@@ -61,7 +61,7 @@ export default function BStockDropShip() {
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">💼</div>
-                <h3 className="tc-difference-pillar-title">Brands Maintain Operational Control</h3>
+                <h3 className="tc-difference-pillar-title">You Keep Operational Control</h3>
                 <p className="tc-difference-pillar-text">You keep inventory and fulfillment in-house while Toycycle drives visibility, traffic, and conversion.</p>
               </div>
               <div className="tc-difference-pillar-card">
@@ -315,7 +315,7 @@ export default function BStockDropShip() {
                   We handle returned and open-box inventory end-to-end.
                 </p>
                 <div className="tc-solution-cta">
-                  <Link href="/contact" className="tc-btn tc-btn-outline">Learn More</Link>
+                  <Link href="/returns-management" className="tc-btn tc-btn-outline">Learn More</Link>
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ export default function BStockDropShip() {
                   Fully outsourced resale operations for brands.
                 </p>
                 <div className="tc-solution-cta">
-                  <Link href="/contact" className="tc-btn tc-btn-outline">Learn More</Link>
+                  <Link href="/resale-as-a-service" className="tc-btn tc-btn-outline">Learn More</Link>
                 </div>
               </div>
             </div>

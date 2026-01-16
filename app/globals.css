@@ -106,7 +106,7 @@ body {
 
 .tc-main-brand-title {
   font-family: var(--font-heading-family);
-  font-size: 1.5rem;
+  font-size: var(--font-size-body-large);
   font-weight: 900;
   color: var(--tc-brand-green);
   text-transform: uppercase;
@@ -204,7 +204,7 @@ body {
 }
 
 .tc-card p { 
-  font-size: 1.5rem; 
+  font-size: var(--font-size-body-large); 
   color: #444; 
   margin-bottom: 0; 
 }
@@ -318,17 +318,19 @@ body {
 }
 
 .tc-faq-question { 
-  font-size: 1.7rem; 
-  font-weight: 700; 
+  font-family: var(--font-heading-family);
+  font-size: var(--font-size-h3); 
+  font-weight: var(--section-heading-weight); 
   color: var(--tc-brand-green); 
   margin-bottom: 10px; 
   display: block; 
+  letter-spacing: var(--letter-spacing-heading);
 }
 
 .tc-faq-answer { 
-  font-size: 1.5rem; 
-  color: #555; 
-  line-height: 1.6; 
+  font-size: var(--font-size-body-large); 
+  color: var(--color-text-secondary); 
+  line-height: 1.7; 
   margin: 0; 
 }
 
@@ -339,7 +341,7 @@ body {
 }
 
 .tc-step-text {
-  font-size: 1.5rem;
+  font-size: var(--font-size-body-large);
   text-align: center;
   color: #333;
 }
@@ -605,7 +607,7 @@ body {
   font-size: var(--font-size-body-large);
   font-weight: 500;
   color: var(--color-text-tertiary);
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 32px;
 }
 
@@ -888,7 +890,7 @@ body {
 
 .tc-problem-point-text {
   font-size: var(--font-size-body-large);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
   font-weight: 500;
@@ -922,9 +924,9 @@ body {
   }
 
   .tc-problem-point-icon {
-    width: 48px;
-    height: 48px;
-    font-size: 1.8rem;
+  font-size: var(--font-size-body-large); 
+  color: var(--color-text-secondary); 
+  line-height: 1.7; 
   }
 
   .tc-problem-point-text {
@@ -1038,7 +1040,7 @@ body {
 
 .tc-difference-pillar-title {
   font-family: var(--font-heading-family);
-  font-size: 1.15rem;
+  font-size: var(--font-size-h3);
   font-weight: var(--section-heading-weight);
   color: var(--tc-brand-green);
   margin: 0;
@@ -1047,15 +1049,15 @@ body {
 }
 
 .tc-difference-pillar-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--color-text-tertiary);
+  font-size: var(--font-size-body-large);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
   margin: 0;
   font-weight: 500;
 }
 
 .tc-difference-footer-text {
-  font-size: 1.15rem;
+  font-size: var(--font-size-h3);
   line-height: 1.7;
   color: var(--color-text-primary);
   margin: 60px auto 0;
@@ -1099,11 +1101,11 @@ body {
   }
 
   .tc-difference-pillar-title {
-    font-size: 1.05rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
   }
 
   .tc-difference-pillar-text {
-    font-size: 0.9rem;
+    font-size: var(--font-size-body);
   }
 
   .tc-difference-footer-text {
@@ -1334,9 +1336,9 @@ body {
 }
 
 .tc-solution-description {
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-body-large);
   line-height: 1.7;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   margin-bottom: 28px;
   flex-grow: 1;
   font-weight: 400;
@@ -1354,7 +1356,7 @@ body {
   padding: 10px 0;
   padding-left: 28px;
   position: relative;
-  line-height: 1.6;
+  line-height: 1.7;
   font-weight: 500;
 }
 
@@ -1433,7 +1435,7 @@ body {
   }
 
   .tc-solution-description {
-    font-size: 0.95rem;
+    font-size: var(--font-size-body);
   }
 
   .tc-solution-features li {
@@ -1515,7 +1517,7 @@ body {
 .tc-service-description {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 24px;
   flex-grow: 1;
 }
@@ -1779,7 +1781,7 @@ body {
 }
 
 .tc-step-description {
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-body-large);
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
@@ -1920,7 +1922,7 @@ body {
 
 .tc-journey-step-text {
   font-size: var(--font-size-small);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
 }
@@ -2008,7 +2010,7 @@ body {
 
 .tc-trust-feature-text {
   font-size: var(--font-size-body);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
 }
@@ -2154,7 +2156,7 @@ body {
   color: var(--color-text-tertiary);
   text-align: center;
   margin-bottom: 40px;
-  line-height: 1.6;
+  line-height: 1.7;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -2208,7 +2210,7 @@ body {
   font-size: var(--font-size-body-large);
   color: var(--color-text-tertiary);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .tc-resale-solutions-cta {
@@ -2375,7 +2377,7 @@ body {
 }
 
 .tc-cta-text {
-  font-size: 1.15rem;
+  font-size: var(--font-size-h3);
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 40px;
   line-height: 1.7;
@@ -2522,7 +2524,7 @@ body {
 
 .tc-pricing-title {
   font-family: var(--font-heading-family);
-  font-size: 1.5rem;
+  font-size: var(--font-size-body-large);
   font-weight: var(--section-heading-weight);
   color: var(--tc-brand-green);
   margin: 0;
@@ -2540,7 +2542,7 @@ body {
 
 .tc-pricing-description {
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text-tertiary);
   margin-bottom: 24px;
   text-align: center;
@@ -2682,7 +2684,7 @@ body {
 
 .tc-footer-tagline {
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
@@ -2919,7 +2921,7 @@ body {
 }
 
 .tc-process-step-number {
-  background-color: #555;
+  background-color: var(--color-text-secondary);
   color: white;
   width: 40px;
   height: 40px;
@@ -2942,7 +2944,7 @@ body {
 
 .tc-process-step-desc {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--color-text-secondary);
   line-height: 1.4;
   margin-top: 0.25rem;
 }
@@ -3052,7 +3054,7 @@ body {
 
 .tc-returns-step p {
   font-size: var(--font-size-body);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
 }
@@ -3191,7 +3193,7 @@ body {
   resize: vertical;
   min-height: 140px;
   font-family: var(--font-body-family);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .tc-form-group select {
