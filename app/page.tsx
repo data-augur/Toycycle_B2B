@@ -36,7 +36,7 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
             <p className="tc-home-community-text">
-              Built for toy & baby brands with safety, compliance, and brand control at the core
+              Built for toy brands with safety, compliance, and brand control at the core
             </p>
             <div className="tc-partners-wrapper">
               <div className="tc-partners-grid">
@@ -194,7 +194,7 @@ export default function Home() {
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">✅</div>
-                <p className="tc-problem-point-text">Toys & baby gear demand higher QA, traceability, and trust</p>
+                <p className="tc-problem-point-text">Toys demand higher QA, traceability, and trust</p>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function Home() {
           <h2 className="tc-section-title">Solutions Overview</h2>
           
           <div className="tc-solutions-grid">
-            {/* Solution 1: B-Stock Drop Ship (Primary) */}
+            {/* Solution 1: Toycycle Resale Direct™ (Primary) */}
             <div className="tc-solution-card tc-solution-featured">
               <div className="tc-solution-badge">
                 <span className="tc-badge-star">⭐</span>
@@ -244,15 +244,20 @@ export default function Home() {
               <div className="tc-solution-card-inner">
                 <div className="tc-solution-header">
                   <div className="tc-solution-icon">📦</div>
-                  <h3 className="tc-solution-title">B-Stock Drop Ship</h3>
+                  <h3 className="tc-solution-title">
+                    Toycycle Resale Direct
+                    <sup style={{ fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px' }}>
+                      TM
+                    </sup>
+                  </h3>
                 </div>
                 <p className="tc-solution-description">
-                  Recover value from open-box and excess inventory — without warehousing or liquidation.
+                  Sell open-box and excess inventory in our marketplace and dropship direct from your warehouse.
                 </p>
                 <ul className="tc-solution-features">
-                  <li>Ship directly from your warehouse</li>
                   <li>Maintain pricing and channel control</li>
                   <li>Reach real families, not liquidators</li>
+                  <li>Ship directly from your warehouse</li>
                 </ul>
                 <div className="tc-solution-cta">
                   <Link href="/b-stock-drop-ship" className="tc-btn tc-btn-primary">Learn More →</Link>

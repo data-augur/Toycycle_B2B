@@ -35,7 +35,7 @@ export default function ResaleAsAService() {
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
             <p className="tc-home-community-text">
-              Built for toy & baby brands with safety, compliance, and brand control at the core
+              Built for toy brands with safety, compliance, and brand control at the core
             </p>
             <div className="tc-partners-wrapper">
               <div className="tc-partners-grid">

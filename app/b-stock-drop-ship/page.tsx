@@ -10,8 +10,8 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">B-Stock Drop Ship</h1>
-              <p className="tc-home-hero-subtitle">Sell open-box and excess inventory directly to trusted families — with no warehousing, no fulfillment overhead, and full brand control.</p>
+              <h1 className="tc-home-hero-title">Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup></h1>
+              <p className="tc-home-hero-subtitle">Dropship b-stock and excess inventory directly to trusted families – with no overhead and full brand control.</p>
               <div className="tc-home-hero-ctas">
                 <Link href="/contact" className="tc-btn tc-btn-primary">Get Started</Link>
               </div>
@@ -34,9 +34,9 @@ export default function BStockDropShip() {
       <section className="tc-home-section-two">
         <div className="tc-content-container">
             <div className="tc-home-section-two-content">
-            <h2 className="tc-section-title">What is Toycycle B-Stock DropShip?</h2>
+            <h2 className="tc-section-title">What is Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup>?</h2>
               <p className="tc-home-section-text">
-              Toycycle B-Stock Drop Ship integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
+              Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup> integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-difference-content">
             <div className="tc-difference-label">Why Choose Us</div>
-            <h2 className="tc-difference-headline">Why Brands Choose Toycycle B-Stock Drop Ship</h2>
+            <h2 className="tc-difference-headline">Why Brands Choose Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup></h2>
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">⚡</div>
@@ -84,7 +84,7 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
             <p className="tc-home-community-text">
-              Built for toy & baby brands with safety, compliance, and brand control at the core
+              Built for toy brands with safety, compliance, and brand control at the core
             </p>
             <div className="tc-partners-wrapper">
               <div className="tc-partners-grid">

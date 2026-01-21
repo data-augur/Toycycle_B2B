@@ -24,6 +24,11 @@ export async function POST(request: NextRequest) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
+      // Allow sending from a different address than the authenticated user
+      // This is needed when using email aliases
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
     // If no SMTP credentials are provided, use a simple fallback
@@ -47,8 +52,18 @@ export async function POST(request: NextRequest) {
     const interestLabel = interestLabels[interest] || interest;
 
     // Email content
+    // Format: "Display Name <email@domain.com>" or just "email@domain.com"
+    const fromAddress = process.env.SMTP_FROM || process.env.SMTP_USER;
+    const fromDisplayName = process.env.SMTP_FROM_NAME || 'Toycycle';
+    const fromEmail = fromDisplayName ? `${fromDisplayName} <${fromAddress}>` : fromAddress;
+    
+    // Log for debugging (remove in production if needed)
+    console.log('Sending email from:', fromEmail);
+    console.log('SMTP_FROM env var:', process.env.SMTP_FROM);
+    
     const mailOptions = {
-      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+      from: fromEmail,
+      replyTo: fromAddress, // Set reply-to to the alias address
       to: ['sarfraz@toycycle.co', 'rhonda@toycycle.co'],
       subject: `New Contact Form Submission: ${interestLabel}`,
       html: `
@@ -95,7 +110,8 @@ ${message}
 
     // Send thank you email to the submitter
     const thankYouEmailOptions = {
-      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+      from: fromEmail,
+      replyTo: fromAddress, // Set reply-to to the alias address
       to: email,
       subject: 'Thank You for Contacting Toycycle',
       html: `
