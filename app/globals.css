@@ -1249,7 +1249,7 @@ body {
 
 .tc-solution-badge {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   background: var(--tc-brand-secondary);
   color: white;
