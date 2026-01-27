@@ -10,8 +10,8 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">Inventory Recovery & Resale Infrastructure for Toy Brands</h1>
-              <p className="tc-home-hero-subtitle">Recover value from B-stock, returns, and excess inventory — without liquidation, grey markets, or brand risk.</p>
+              <h1 className="tc-home-hero-title">Inventory Recovery for Toy Brands</h1>
+              <p className="tc-home-hero-subtitle">Turn B-stock, returns, and excess inventory into cash–without liquidation or grey market risk.</p>
               <div className="tc-home-hero-ctas">
                 <Link href="/contact" className="tc-btn tc-btn-primary">👉 Talk to Our Team</Link>
                 <Link href="#services" className="tc-btn tc-btn-secondary">Explore Solutions</Link>
@@ -178,25 +178,43 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-problem-content">
             <div className="tc-problem-label">The Problem</div>
-            <h2 className="tc-problem-headline">Demand exists.<br />The challenge is getting inventory to the right channel.</h2>
             <div className="tc-problem-points-list">
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">📉</div>
-                <p className="tc-problem-point-text">Returns, open-box, and excess inventory quietly drain margin</p>
-              </div>
-              <div className="tc-problem-point-row">
-                <div className="tc-problem-point-icon">⚠️</div>
-                <p className="tc-problem-point-text">Liquidation erodes brand value and pricing integrity</p>
-              </div>
-              <div className="tc-problem-point-row">
-                <div className="tc-problem-point-icon">🔒</div>
-                <p className="tc-problem-point-text">Secondary marketplaces introduce grey-market and safety risk</p>
+                <p className="tc-problem-point-text">
+                  Returns, open-box, and excess inventory pile up, cost money and drain margin
+                </p>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">✅</div>
-                <p className="tc-problem-point-text">Toys demand higher QA, traceability, and trust</p>
+                <p className="tc-problem-point-text">
+                  Not all 3PL’s can handle toys that demand higher QA, traceability, and trust
+                </p>
+              </div>
+              <div className="tc-problem-point-row">
+                <div className="tc-problem-point-icon">💸</div>
+                <p className="tc-problem-point-text">
+                  The high cost of returns leads some brands to give product away for free
+                </p>
+              </div>
+              <div className="tc-problem-point-row">
+                <div className="tc-problem-point-icon">⚠️</div>
+                <p className="tc-problem-point-text">
+                  Liquidation removes control, and erodes brand value and pricing integrity
+                </p>
+              </div>
+              <div className="tc-problem-point-row">
+                <div className="tc-problem-point-icon">🔒</div>
+                <p className="tc-problem-point-text">
+                  Uncontrolled secondary markets introduce grey-market and safety risk
+                </p>
               </div>
             </div>
+            <h2 className="tc-problem-headline">
+              Demand exists.
+              <br />
+              The challenge is getting inventory to the right channel.
+            </h2>
           </div>
         </div>
       </section>
@@ -235,8 +253,8 @@ export default function Home() {
           <h2 className="tc-section-title">Solutions Overview</h2>
           
           <div className="tc-solutions-grid">
-            {/* Solution 1: Toycycle Resale Direct™ (Primary) */}
-            <div className="tc-solution-card tc-solution-featured">
+            {/* Solution 1: Toycycle Resale Direct™ */}
+            <div className="tc-solution-card">
               <div className="tc-solution-badge">
                 <span className="tc-badge-star">⭐</span>
                 <span>Most brands start here</span>
@@ -281,31 +299,23 @@ export default function Home() {
                   <li>Resale by Toycycle</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/returns-management" className="tc-btn tc-btn-outline">Learn more →</Link>
+                  <Link href="/returns-management" className="tc-btn tc-btn-primary">Learn More →</Link>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Solution 3: Resale-as-a-Service */}
-            <div className="tc-solution-card">
-              <div className="tc-solution-card-inner">
-                <div className="tc-solution-header">
-                  <div className="tc-solution-icon">🌐</div>
-                  <h3 className="tc-solution-title">Resale-as-a-Service</h3>
-                </div>
-                <p className="tc-solution-description">
-                  Launch a fully brand-owned resale program with white-labeled tech and ops.
-                </p>
-                <ul className="tc-solution-features">
-                  <li>End to End Resale Solution</li>
-                  <li>Zero grey-market exposure</li>
-                  <li>Growth Through Resale</li>
-                </ul>
-                <div className="tc-solution-cta">
-                  <Link href="/resale-as-a-service" className="tc-btn tc-btn-outline">Learn more →</Link>
-                </div>
-              </div>
-            </div>
+      {/* Resale-as-a-Service Section */}
+      <section className="tc-resale-service-section">
+        <div className="tc-content-container">
+          <h2 className="tc-section-title">Looking for a complete resale solution?</h2>
+          <p className="tc-resale-service-description">
+            We offer a brand-owned Resale-as-a-Service program with white label tech and ops. Turnkey solution, zero grey-market exposure, growth through resale.
+          </p>
+          <div className="tc-resale-service-cta">
+            <Link href="/resale-as-a-service" className="tc-btn tc-btn-primary">Learn more</Link>
           </div>
         </div>
       </section>
