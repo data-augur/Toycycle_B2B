@@ -1224,6 +1224,7 @@ body {
   gap: 28px;
   max-width: 1400px;
   margin: 0 auto;
+  align-items: start;
 }
 
 .tc-solution-card {
@@ -1244,9 +1245,7 @@ body {
   border-color: var(--tc-brand-secondary);
 }
 
-.tc-solution-featured {
-  /* Removed featured styling - both cards now have same formatting */
-}
+/* Removed .tc-solution-featured styling - both cards now have same formatting */
 
 .tc-solution-badge {
   position: absolute;
@@ -1281,7 +1280,7 @@ body {
 }
 
 .tc-solution-card:has(.tc-solution-badge) .tc-solution-card-inner {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .tc-solution-header {
@@ -1389,7 +1388,7 @@ body {
   }
 
   .tc-solution-card:has(.tc-solution-badge) .tc-solution-card-inner {
-    padding-top: 32px;
+    padding-top: 24px;
   }
 
   .tc-solution-badge {

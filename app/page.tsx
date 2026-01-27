@@ -211,9 +211,9 @@ export default function Home() {
               </div>
             </div>
             <h2 className="tc-problem-headline">
-              Demand exists.
+              Demand Exists.
               <br />
-              The challenge is getting inventory to the right channel.
+              The challenge is finding the right partner for inventory recovery
             </h2>
           </div>
         </div>
@@ -270,12 +270,13 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="tc-solution-description">
-                  Sell open-box and excess inventory in our marketplace and dropship direct from your warehouse.
+                  No risk solution enables brands to sell b-stock or excess inventory and dropship directly from their warehouse.
                 </p>
                 <ul className="tc-solution-features">
                   <li>Maintain pricing and channel control</li>
                   <li>Reach real families, not liquidators</li>
-                  <li>Ship directly from your warehouse</li>
+                  <li>Reduce loss from returns</li>
+                  <li>Eliminate grey-market and safety risks</li>
                 </ul>
                 <div className="tc-solution-cta">
                   <Link href="/b-stock-drop-ship" className="tc-btn tc-btn-primary">Learn More →</Link>
@@ -288,10 +289,12 @@ export default function Home() {
               <div className="tc-solution-card-inner">
                 <div className="tc-solution-header">
                   <div className="tc-solution-icon">🔄</div>
-                  <h3 className="tc-solution-title">Returns Management</h3>
+                  <h3 className="tc-solution-title">End to End Returns Management</h3>
                 </div>
                 <p className="tc-solution-description">
-                  Seamlessly expand your operations team.
+                  Seamlessly expand your operations team by shipping customer returns directly to us. We&apos;ll handle the rest.
+                  <br />
+                  Get the same benefits as Toycycle Resale Direct plus:
                 </p>
                 <ul className="tc-solution-features">
                   <li>Full-Cycle Logistics</li>
