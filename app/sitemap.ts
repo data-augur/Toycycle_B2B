@@ -1,7 +1,12 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://toycycleb2b.com'
+  let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://brands.toycycle.co'
+  
+  // Ensure the URL has a protocol
+  if (!baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
+    baseUrl = `https://${baseUrl}`
+  }
 
   return [
     {
