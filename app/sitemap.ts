@@ -1,13 +1,8 @@
 import { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  let baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://brands.toycycle.co";
-
-  // Ensure the URL has a protocol
-  if (!baseUrl.startsWith("http://") && !baseUrl.startsWith("https://")) {
-    baseUrl = `https://${baseUrl}`;
-  }
+  const baseUrl = siteUrl;
 
   return [
     {
@@ -45,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/success-stories/loog`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/privacy-policy`,

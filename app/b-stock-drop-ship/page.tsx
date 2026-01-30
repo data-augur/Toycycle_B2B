@@ -1,25 +1,55 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { siteUrl } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Toycycle Resale Direct™ – B-Stock Drop Ship",
+  description:
+    "Dropship B-stock and excess inventory directly to trusted families. Integrate with Shopify, WooCommerce, or your platform. No overhead, full brand control.",
+  openGraph: {
+    title: "Toycycle Resale Direct™ – B-Stock Drop Ship",
+    description:
+      "Dropship B-stock and excess inventory to trusted families. No overhead, full brand control.",
+    url: `${siteUrl}/b-stock-drop-ship`,
+  },
+  alternates: { canonical: `${siteUrl}/b-stock-drop-ship` },
+};
 
 export default function BStockDropShip() {
   return (
     <div className="tc-landing-wrapper">
-      
       {/* Hero Section */}
       <section className="tc-home-hero">
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup></h1>
-              <p className="tc-home-hero-subtitle">Dropship b-stock and excess inventory directly to trusted families – with no overhead and full brand control.</p>
+              <h1 className="tc-home-hero-title">
+                Toycycle Resale Direct
+                <sup
+                  style={{
+                    fontSize: "0.55em",
+                    verticalAlign: "super",
+                    marginLeft: "3px",
+                  }}
+                >
+                  TM
+                </sup>
+              </h1>
+              <p className="tc-home-hero-subtitle">
+                Dropship b-stock and excess inventory directly to trusted
+                families – with no overhead and full brand control.
+              </p>
               <div className="tc-home-hero-ctas">
-                <Link href="/contact" className="tc-btn tc-btn-primary">Get Started</Link>
+                <Link href="/contact" className="tc-btn tc-btn-primary">
+                  Get Started
+                </Link>
               </div>
             </div>
             <div className="tc-home-hero-image">
-              <Image 
-                src="/images/partners/Hero_DropShip.webp" 
-                alt="B-Stock Drop Ship" 
+              <Image
+                src="/images/partners/Hero_DropShip.webp"
+                alt="Toycycle Resale Direct – dropshipping b-stock and excess inventory to families"
                 width={600}
                 height={400}
                 className="tc-hero-img"
@@ -33,10 +63,36 @@ export default function BStockDropShip() {
       {/* What is Section */}
       <section className="tc-home-section-two">
         <div className="tc-content-container">
-            <div className="tc-home-section-two-content">
-            <h2 className="tc-section-title">What is Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup>?</h2>
-              <p className="tc-home-section-text">
-              Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup> integrates directly with your existing commerce stack—whether you&apos;re on Shopify, WooCommerce, Shopware, or a custom platform. List and sell B-stock or surplus inventory through Toycycle&apos;s trusted marketplace without disrupting your core retail or DTC operations.
+          <div className="tc-home-section-two-content">
+            <h2 className="tc-section-title">
+              What is Toycycle Resale Direct
+              <sup
+                style={{
+                  fontSize: "0.55em",
+                  verticalAlign: "super",
+                  marginLeft: "3px",
+                }}
+              >
+                TM
+              </sup>
+              ?
+            </h2>
+            <p className="tc-home-section-text">
+              Toycycle Resale Direct
+              <sup
+                style={{
+                  fontSize: "0.55em",
+                  verticalAlign: "super",
+                  marginLeft: "3px",
+                }}
+              >
+                TM
+              </sup>{" "}
+              integrates directly with your existing commerce stack—whether
+              you&apos;re on Shopify, WooCommerce, Shopware, or a custom
+              platform. List and sell B-stock or surplus inventory through
+              Toycycle&apos;s trusted marketplace without disrupting your core
+              retail or DTC operations.
             </p>
           </div>
         </div>
@@ -47,32 +103,69 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-difference-content">
             <div className="tc-difference-label">Why Choose Us</div>
-            <h2 className="tc-difference-headline">Why Brands Choose Toycycle Resale Direct<sup style={{fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px'}}>TM</sup></h2>
+            <h2 className="tc-difference-headline">
+              Why Brands Choose Toycycle Resale Direct
+              <sup
+                style={{
+                  fontSize: "0.55em",
+                  verticalAlign: "super",
+                  marginLeft: "3px",
+                }}
+              >
+                TM
+              </sup>
+            </h2>
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">⚡</div>
-                <h3 className="tc-difference-pillar-title">Faster Sell-Thru - No Channel Risk</h3>
-                <p className="tc-difference-pillar-text">List surplus inventory in a marketplace where buyers are motivated by quality and sustainability, not bargain chasing.</p>
+                <h3 className="tc-difference-pillar-title">
+                  Faster Sell-Thru - No Channel Risk
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  List surplus inventory in a marketplace where buyers are
+                  motivated by quality and sustainability, not bargain chasing.
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">🛡️</div>
-                <h3 className="tc-difference-pillar-title">Brand Value & Pricing Protection</h3>
-                <p className="tc-difference-pillar-text">Products appear in a curated, brand-safe environment — no off-price dumping or unauthorized resale.</p>
+                <h3 className="tc-difference-pillar-title">
+                  Brand Value & Pricing Protection
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  Products appear in a curated, brand-safe environment — no
+                  off-price dumping or unauthorized resale.
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">💼</div>
-                <h3 className="tc-difference-pillar-title">You Keep Operational Control</h3>
-                <p className="tc-difference-pillar-text">You keep inventory and fulfillment in-house while Toycycle drives visibility, traffic, and conversion.</p>
+                <h3 className="tc-difference-pillar-title">
+                  You Keep Operational Control
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  You keep inventory and fulfillment in-house while Toycycle
+                  drives visibility, traffic, and conversion.
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">💰</div>
-                <h3 className="tc-difference-pillar-title">Higher Returns Than Liquidation</h3>
-                <p className="tc-difference-pillar-text">Sales often capture significantly more revenue than traditional liquidation channels—without additional operational burden.</p>
+                <h3 className="tc-difference-pillar-title">
+                  Higher Returns Than Liquidation
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  Sales often capture significantly more revenue than
+                  traditional liquidation channels—without additional
+                  operational burden.
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">👥</div>
-                <h3 className="tc-difference-pillar-title">Qualified Customer Leads</h3>
-                <p className="tc-difference-pillar-text">Connect with high-intent customers you can engage in future campaigns, DTC promotions, or loyalty programs.</p>
+                <h3 className="tc-difference-pillar-title">
+                  Qualified Customer Leads
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  Connect with high-intent customers you can engage in future
+                  campaigns, DTC promotions, or loyalty programs.
+                </p>
               </div>
             </div>
           </div>
@@ -84,68 +177,69 @@ export default function BStockDropShip() {
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
             <p className="tc-home-community-text">
-              Built for toy brands with safety, compliance, and brand control at the core
+              Built for toy brands with safety, compliance, and brand control at
+              the core
             </p>
             <div className="tc-partners-wrapper">
               <div className="tc-partners-grid">
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/HABA_Logo.webp" 
-                    alt="HABA" 
+                  <Image
+                    src="/images/partners/HABA_Logo.webp"
+                    alt="HABA"
                     width={220}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/waytoplay_logo.webp" 
-                    alt="waytoplay" 
+                  <Image
+                    src="/images/partners/waytoplay_logo.webp"
+                    alt="Way to Play"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Ekobo.webp" 
-                    alt="Ekobo" 
+                  <Image
+                    src="/images/partners/Ekobo.webp"
+                    alt="Ekobo"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Janod_Logo.webp" 
-                    alt="Janod" 
+                  <Image
+                    src="/images/partners/Janod_Logo.webp"
+                    alt="Janod"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Loog_Logo.webp" 
-                    alt="Loog" 
+                  <Image
+                    src="/images/partners/Loog_Logo.webp"
+                    alt="Loog"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/PlanToys_Logo.webp" 
-                    alt="PlanToys" 
+                  <Image
+                    src="/images/partners/PlanToys_Logo.webp"
+                    alt="PlanToys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/tytantoys_logo.webp" 
-                    alt="Tytan Toys" 
+                  <Image
+                    src="/images/partners/tytantoys_logo.webp"
+                    alt="Tytan Toys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
@@ -153,63 +247,63 @@ export default function BStockDropShip() {
                 </div>
                 {/* Duplicate logos for seamless loop */}
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/HABA_Logo.webp" 
-                    alt="HABA" 
+                  <Image
+                    src="/images/partners/HABA_Logo.webp"
+                    alt="HABA"
                     width={220}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/waytoplay_logo.webp" 
-                    alt="waytoplay" 
+                  <Image
+                    src="/images/partners/waytoplay_logo.webp"
+                    alt="Way to Play"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Ekobo.webp" 
-                    alt="Ekobo" 
+                  <Image
+                    src="/images/partners/Ekobo.webp"
+                    alt="Ekobo"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Janod_Logo.webp" 
-                    alt="Janod" 
+                  <Image
+                    src="/images/partners/Janod_Logo.webp"
+                    alt="Janod"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Loog_Logo.webp" 
-                    alt="Loog" 
+                  <Image
+                    src="/images/partners/Loog_Logo.webp"
+                    alt="Loog"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/PlanToys_Logo.webp" 
-                    alt="PlanToys" 
+                  <Image
+                    src="/images/partners/PlanToys_Logo.webp"
+                    alt="PlanToys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/tytantoys_logo.webp" 
-                    alt="Tytan Toys" 
+                  <Image
+                    src="/images/partners/tytantoys_logo.webp"
+                    alt="Tytan Toys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
@@ -223,8 +317,13 @@ export default function BStockDropShip() {
 
       {/* How It Works Section */}
       <section className="tc-how-it-works">
-        <div className="tc-content-container" style={{textAlign: 'center'}}>
-          <div className="tc-problem-label" style={{display: 'inline-block', marginBottom: '24px'}}>How It Works</div>
+        <div className="tc-content-container" style={{ textAlign: "center" }}>
+          <div
+            className="tc-problem-label"
+            style={{ display: "inline-block", marginBottom: "24px" }}
+          >
+            How It Works
+          </div>
           <h2 className="tc-section-title">How It Works</h2>
           <div className="tc-how-it-works-grid">
             <div className="tc-how-it-works-card">
@@ -235,7 +334,11 @@ export default function BStockDropShip() {
               </div>
               <div className="tc-step-card-content">
                 <h3 className="tc-step-title">You Select the Inventory</h3>
-                <p className="tc-step-description">Choose which B-stock or surplus products to list. You stay in control of inventory, pricing parameters, and fulfillment — nothing leaves your warehouse until it sells.</p>
+                <p className="tc-step-description">
+                  Choose which B-stock or surplus products to list. You stay in
+                  control of inventory, pricing parameters, and fulfillment —
+                  nothing leaves your warehouse until it sells.
+                </p>
               </div>
             </div>
             <div className="tc-how-it-works-card">
@@ -246,7 +349,11 @@ export default function BStockDropShip() {
               </div>
               <div className="tc-step-card-content">
                 <h3 className="tc-step-title">We Create the Demand</h3>
-                <p className="tc-step-description">Toycycle lists and merchandises your products in our trusted off-price marketplace, reaching families actively seeking quality, sustainable toys.</p>
+                <p className="tc-step-description">
+                  Toycycle lists and merchandises your products in our trusted
+                  off-price marketplace, reaching families actively seeking
+                  quality, sustainable toys.
+                </p>
               </div>
             </div>
             <div className="tc-how-it-works-card">
@@ -257,7 +364,11 @@ export default function BStockDropShip() {
               </div>
               <div className="tc-step-card-content">
                 <h3 className="tc-step-title">You Ship When It Sells</h3>
-                <p className="tc-step-description">When an order is placed, you ship directly to the customer. We handle the marketplace experience, payments, and customer communications.</p>
+                <p className="tc-step-description">
+                  When an order is placed, you ship directly to the customer. We
+                  handle the marketplace experience, payments, and customer
+                  communications.
+                </p>
               </div>
             </div>
           </div>
@@ -274,22 +385,41 @@ export default function BStockDropShip() {
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">🎯</div>
                 <div>
-                  <h3 className="tc-problem-point-title">Built for Brands, Not Bargain Hunting</h3>
-                  <p className="tc-problem-point-text">Toycycle is not a discount marketplace. We serve families who value quality, longevity, and sustainability—creating demand that aligns with brand values, not price erosion.</p>
+                  <h3 className="tc-problem-point-title">
+                    Built for Brands, Not Bargain Hunting
+                  </h3>
+                  <p className="tc-problem-point-text">
+                    Toycycle is not a discount marketplace. We serve families
+                    who value quality, longevity, and sustainability—creating
+                    demand that aligns with brand values, not price erosion.
+                  </p>
                 </div>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">✨</div>
                 <div>
-                  <h3 className="tc-problem-point-title">Curated, Brand-Safe by Design</h3>
-                  <p className="tc-problem-point-text">Every product and partner on Toycycle is vetted. Off-price inventory appears in a controlled environment that protects brand perception and avoids channel conflict.</p>
+                  <h3 className="tc-problem-point-title">
+                    Curated, Brand-Safe by Design
+                  </h3>
+                  <p className="tc-problem-point-text">
+                    Every product and partner on Toycycle is vetted. Off-price
+                    inventory appears in a controlled environment that protects
+                    brand perception and avoids channel conflict.
+                  </p>
                 </div>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">🌱</div>
                 <div>
-                  <h3 className="tc-problem-point-title">Purpose-Driven Demand You Can Trust</h3>
-                  <p className="tc-problem-point-text">Toycycle&apos;s audience is built around circular commerce. Families come to Toycycle specifically to buy second-life and off-price toys—making sell-through more intentional and predictable.</p>
+                  <h3 className="tc-problem-point-title">
+                    Purpose-Driven Demand You Can Trust
+                  </h3>
+                  <p className="tc-problem-point-text">
+                    Toycycle&apos;s audience is built around circular commerce.
+                    Families come to Toycycle specifically to buy second-life
+                    and off-price toys—making sell-through more intentional and
+                    predictable.
+                  </p>
                 </div>
               </div>
             </div>
@@ -300,11 +430,32 @@ export default function BStockDropShip() {
       {/* Looking for More Managed Solution Section */}
       <section className="tc-solutions">
         <div className="tc-content-container">
-          <h2 className="tc-section-title">Looking for a More Managed Solution?</h2>
-          <p className="tc-home-community-text" style={{textAlign: 'center', marginBottom: '40px', maxWidth: '900px', margin: '0 auto 40px'}}>
-            Not every inventory challenge fits a single model. If you&apos;re managing returns, open-box inventory, or more complex resale needs, Toycycle offers additional programs designed to take the operational burden off your team.
+          <h2 className="tc-section-title">
+            Looking for a More Managed Solution?
+          </h2>
+          <p
+            className="tc-home-community-text"
+            style={{
+              textAlign: "center",
+              marginBottom: "40px",
+              maxWidth: "900px",
+              margin: "0 auto 40px",
+            }}
+          >
+            Not every inventory challenge fits a single model. If you&apos;re
+            managing returns, open-box inventory, or more complex resale needs,
+            Toycycle offers additional programs designed to take the operational
+            burden off your team.
           </p>
-          <div className="tc-solutions-grid" style={{gridTemplateColumns: '1fr 1fr', maxWidth: '1000px', margin: '0 auto', justifyContent: 'center'}}>
+          <div
+            className="tc-solutions-grid"
+            style={{
+              gridTemplateColumns: "1fr 1fr",
+              maxWidth: "1000px",
+              margin: "0 auto",
+              justifyContent: "center",
+            }}
+          >
             <div className="tc-solution-card">
               <div className="tc-solution-card-inner">
                 <div className="tc-solution-header">
@@ -315,7 +466,12 @@ export default function BStockDropShip() {
                   We handle returned and open-box inventory end-to-end.
                 </p>
                 <div className="tc-solution-cta">
-                  <Link href="/returns-management" className="tc-btn tc-btn-outline">Learn More</Link>
+                  <Link
+                    href="/returns-management"
+                    className="tc-btn tc-btn-outline"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -329,7 +485,12 @@ export default function BStockDropShip() {
                   Fully outsourced resale operations for brands.
                 </p>
                 <div className="tc-solution-cta">
-                  <Link href="/resale-as-a-service" className="tc-btn tc-btn-outline">Learn More</Link>
+                  <Link
+                    href="/resale-as-a-service"
+                    className="tc-btn tc-btn-outline"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -343,20 +504,42 @@ export default function BStockDropShip() {
           <h2 className="tc-section-title">Frequently Asked Questions</h2>
           <div className="tc-faq-grid">
             <div className="tc-faq-item">
-              <span className="tc-faq-question">How does Toycycle define &quot;B-Stock&quot;?</span>
-              <p className="tc-faq-answer">B-stock covers items that cannot be sold as brand new, including open-box returns, minor packaging damage, or older SKU versions that remain perfectly safe and functional.</p>
+              <span className="tc-faq-question">
+                How does Toycycle define &quot;B-Stock&quot;?
+              </span>
+              <p className="tc-faq-answer">
+                B-stock covers items that cannot be sold as brand new, including
+                open-box returns, minor packaging damage, or older SKU versions
+                that remain perfectly safe and functional.
+              </p>
             </div>
             <div className="tc-faq-item">
-              <span className="tc-faq-question">Who handles shipping and fulfillment?</span>
-              <p className="tc-faq-answer">Partners maintain full control. You fulfill orders directly from your warehouse, allowing you to maintain your specific brand shipping standards.</p>
+              <span className="tc-faq-question">
+                Who handles shipping and fulfillment?
+              </span>
+              <p className="tc-faq-answer">
+                Partners maintain full control. You fulfill orders directly from
+                your warehouse, allowing you to maintain your specific brand
+                shipping standards.
+              </p>
             </div>
             <div className="tc-faq-item">
-              <span className="tc-faq-question">How is this different from liquidation?</span>
-              <p className="tc-faq-answer">Liquidation dumps product at low prices to random buyers. Our Market is a curated, brand-approved channel that maintains value and targets sustainability-minded families.</p>
+              <span className="tc-faq-question">
+                How is this different from liquidation?
+              </span>
+              <p className="tc-faq-answer">
+                Liquidation dumps product at low prices to random buyers. Our
+                Market is a curated, brand-approved channel that maintains value
+                and targets sustainability-minded families.
+              </p>
             </div>
             <div className="tc-faq-item">
               <span className="tc-faq-question">Is there a cost to join?</span>
-              <p className="tc-faq-answer">We work on a performance-based model. We only succeed when you move inventory. Contact our team for specific commission and partnership details.</p>
+              <p className="tc-faq-answer">
+                We work on a performance-based model. We only succeed when you
+                move inventory. Contact our team for specific commission and
+                partnership details.
+              </p>
             </div>
           </div>
         </div>
@@ -367,12 +550,15 @@ export default function BStockDropShip() {
         <div className="tc-content-container tc-center">
           <h2 className="tc-cta-title">Make Excess Inventory Matter</h2>
           <p className="tc-cta-text">
-            Connect your off-price and B-stock inventory with demand from engaged, sustainability-minded families — unlocking revenue and ESG impact without disruption to your core operations.
+            Connect your off-price and B-stock inventory with demand from
+            engaged, sustainability-minded families — unlocking revenue and ESG
+            impact without disruption to your core operations.
           </p>
-          <Link href="/contact" className="tc-btn tc-btn-primary">Connect with Us</Link>
+          <Link href="/contact" className="tc-btn tc-btn-primary">
+            Connect with Us
+          </Link>
         </div>
       </section>
-
     </div>
-  )
+  );
 }

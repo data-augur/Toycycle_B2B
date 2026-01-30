@@ -1,26 +1,94 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import { siteUrl, defaultOgImage, mainBrandUrl } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Inventory Recovery for Toy Brands",
+  description:
+    "Turn B-stock, returns, and excess inventory into cash—without liquidation or grey market risk. Toycycle Resale Direct™ and returns management for toy brands.",
+  openGraph: {
+    title: "Inventory Recovery for Toy Brands | Toycycle",
+    description:
+      "Turn B-stock, returns, and excess inventory into cash. Solutions for toy brands—no liquidation or grey market risk.",
+    url: siteUrl,
+    images: [
+      {
+        url: defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Toycycle for Brands",
+      },
+    ],
+  },
+  alternates: { canonical: siteUrl },
+};
+
+function buildJsonLd(base: string) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Toycycle",
+      url: mainBrandUrl,
+      logo: `${base}/images/partners/toycycle_logo.webp`,
+      description:
+        "Inventory recovery and resale solutions for toy brands. Turn B-stock, returns, and excess inventory into cash—without liquidation or grey market risk.",
+      sameAs: [mainBrandUrl, base],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        url: `${base}/contact`,
+        areaServed: "US",
+        name: "Toycycle for Brands",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Toycycle for Brands",
+      url: base,
+      description:
+        "B2B inventory recovery and resale solutions for toy brands.",
+      publisher: { "@id": `${mainBrandUrl}/#organization` },
+    },
+  ];
+}
 
 export default function Home() {
   return (
     <div className="tc-landing-wrapper">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildJsonLd(siteUrl)),
+        }}
+      />
       {/* Hero Section */}
       <section className="tc-home-hero">
         <div className="tc-content-container">
           <div className="tc-home-hero-grid">
             <div className="tc-home-hero-content">
-              <h1 className="tc-home-hero-title">Inventory Recovery for Toy Brands</h1>
-              <p className="tc-home-hero-subtitle">Turn B-stock, returns, and excess inventory into cash–without liquidation or grey market risk.</p>
+              <h1 className="tc-home-hero-title">
+                Inventory Recovery for Toy Brands
+              </h1>
+              <p className="tc-home-hero-subtitle">
+                Turn B-stock, returns, and excess inventory into cash–without
+                liquidation or grey market risk.
+              </p>
               <div className="tc-home-hero-ctas">
-                <Link href="/contact" className="tc-btn tc-btn-primary">👉 Talk to Our Team</Link>
-                <Link href="#services" className="tc-btn tc-btn-secondary">Explore Solutions</Link>
+                <Link href="/contact" className="tc-btn tc-btn-primary">
+                  👉 Talk to Our Team
+                </Link>
+                <Link href="#services" className="tc-btn tc-btn-secondary">
+                  Explore Solutions
+                </Link>
               </div>
             </div>
             <div className="tc-home-hero-image">
-              <Image 
-                src="/images/partners/Hero_Home.webp" 
-                alt="Inventory Recovery & Resale Infrastructure" 
+              <Image
+                src="/images/partners/Hero_Home.webp"
+                alt="Inventory Recovery & Resale Infrastructure"
                 width={600}
                 height={400}
                 className="tc-hero-img"
@@ -36,68 +104,69 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-home-section-three-content">
             <p className="tc-home-community-text">
-              Built for toy brands with safety, compliance, and brand control at the core
+              Built for toy brands with safety, compliance, and brand control at
+              the core
             </p>
             <div className="tc-partners-wrapper">
               <div className="tc-partners-grid">
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/HABA_Logo.webp" 
-                    alt="HABA" 
+                  <Image
+                    src="/images/partners/HABA_Logo.webp"
+                    alt="HABA"
                     width={220}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/waytoplay_logo.webp" 
-                    alt="waytoplay" 
+                  <Image
+                    src="/images/partners/waytoplay_logo.webp"
+                    alt="Way to Play"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Ekobo.webp" 
-                    alt="Ekobo" 
+                  <Image
+                    src="/images/partners/Ekobo.webp"
+                    alt="Ekobo"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Janod_Logo.webp" 
-                    alt="Janod" 
+                  <Image
+                    src="/images/partners/Janod_Logo.webp"
+                    alt="Janod"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Loog_Logo.webp" 
-                    alt="Loog" 
+                  <Image
+                    src="/images/partners/Loog_Logo.webp"
+                    alt="Loog"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/PlanToys_Logo.webp" 
-                    alt="PlanToys" 
+                  <Image
+                    src="/images/partners/PlanToys_Logo.webp"
+                    alt="PlanToys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/tytantoys_logo.webp" 
-                    alt="Tytan Toys" 
+                  <Image
+                    src="/images/partners/tytantoys_logo.webp"
+                    alt="Tytan Toys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
@@ -105,63 +174,63 @@ export default function Home() {
                 </div>
                 {/* Duplicate logos for seamless loop */}
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/HABA_Logo.webp" 
-                    alt="HABA" 
+                  <Image
+                    src="/images/partners/HABA_Logo.webp"
+                    alt="HABA"
                     width={220}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/waytoplay_logo.webp" 
-                    alt="waytoplay" 
+                  <Image
+                    src="/images/partners/waytoplay_logo.webp"
+                    alt="Way to Play"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Ekobo.webp" 
-                    alt="Ekobo" 
+                  <Image
+                    src="/images/partners/Ekobo.webp"
+                    alt="Ekobo"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Janod_Logo.webp" 
-                    alt="Janod" 
+                  <Image
+                    src="/images/partners/Janod_Logo.webp"
+                    alt="Janod"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/Loog_Logo.webp" 
-                    alt="Loog" 
+                  <Image
+                    src="/images/partners/Loog_Logo.webp"
+                    alt="Loog"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/PlanToys_Logo.webp" 
-                    alt="PlanToys" 
+                  <Image
+                    src="/images/partners/PlanToys_Logo.webp"
+                    alt="PlanToys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
                   />
                 </div>
                 <div className="tc-partner-logo">
-                  <Image 
-                    src="/images/partners/tytantoys_logo.webp" 
-                    alt="Tytan Toys" 
+                  <Image
+                    src="/images/partners/tytantoys_logo.webp"
+                    alt="Tytan Toys"
                     width={180}
                     height={90}
                     className="tc-partner-img"
@@ -182,31 +251,36 @@ export default function Home() {
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">📉</div>
                 <p className="tc-problem-point-text">
-                  Returns, open-box, and excess inventory pile up, cost money and drain margin
+                  Returns, open-box, and excess inventory pile up, cost money
+                  and drain margin
                 </p>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">✅</div>
                 <p className="tc-problem-point-text">
-                  Not all 3PL’s can handle toys that demand higher QA, traceability, and trust
+                  Not all 3PL’s can handle toys that demand higher QA,
+                  traceability, and trust
                 </p>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">💸</div>
                 <p className="tc-problem-point-text">
-                  The high cost of returns leads some brands to give product away for free
+                  The high cost of returns leads some brands to give product
+                  away for free
                 </p>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">⚠️</div>
                 <p className="tc-problem-point-text">
-                  Liquidation removes control, and erodes brand value and pricing integrity
+                  Liquidation removes control, and erodes brand value and
+                  pricing integrity
                 </p>
               </div>
               <div className="tc-problem-point-row">
                 <div className="tc-problem-point-icon">🔒</div>
                 <p className="tc-problem-point-text">
-                  Uncontrolled secondary markets introduce grey-market and safety risk
+                  Uncontrolled secondary markets introduce grey-market and
+                  safety risk
                 </p>
               </div>
             </div>
@@ -224,25 +298,40 @@ export default function Home() {
         <div className="tc-content-container">
           <div className="tc-difference-content">
             <div className="tc-difference-label">The Toycycle Difference</div>
-            <h2 className="tc-difference-headline">Purpose-Built Inventory Recovery</h2>
+            <h2 className="tc-difference-headline">
+              Purpose-Built Inventory Recovery
+            </h2>
             <div className="tc-difference-pillars-grid">
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">🛡️</div>
-                <h3 className="tc-difference-pillar-title">Category-Specific QA</h3>
-                <p className="tc-difference-pillar-text">Safety and recall-aware workflows</p>
+                <h3 className="tc-difference-pillar-title">
+                  Category-Specific QA
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  Safety and recall-aware workflows
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">🔐</div>
-                <h3 className="tc-difference-pillar-title">Brand-Safe Resale</h3>
-                <p className="tc-difference-pillar-text">No uncontrolled secondary channels</p>
+                <h3 className="tc-difference-pillar-title">
+                  Brand-Safe Resale
+                </h3>
+                <p className="tc-difference-pillar-text">
+                  No uncontrolled secondary channels
+                </p>
               </div>
               <div className="tc-difference-pillar-card">
                 <div className="tc-difference-pillar-icon">👨‍👩‍👧‍👦</div>
                 <h3 className="tc-difference-pillar-title">Built-In Demand</h3>
-                <p className="tc-difference-pillar-text">From a trusted parent marketplace</p>
+                <p className="tc-difference-pillar-text">
+                  From a trusted parent marketplace
+                </p>
               </div>
             </div>
-            <p className="tc-difference-footer-text">Choose the level of support you need — from no-overhead dropship to end-to-end resale management.</p>
+            <p className="tc-difference-footer-text">
+              Choose the level of support you need — from no-overhead dropship
+              to end-to-end resale management.
+            </p>
           </div>
         </div>
       </section>
@@ -251,7 +340,7 @@ export default function Home() {
       <section className="tc-solutions" id="services">
         <div className="tc-content-container">
           <h2 className="tc-section-title">Solutions Overview</h2>
-          
+
           <div className="tc-solutions-grid">
             {/* Solution 1: Toycycle Resale Direct™ */}
             <div className="tc-solution-card">
@@ -264,13 +353,20 @@ export default function Home() {
                   <div className="tc-solution-icon">📦</div>
                   <h3 className="tc-solution-title">
                     Toycycle Resale Direct
-                    <sup style={{ fontSize: '0.55em', verticalAlign: 'super', marginLeft: '3px' }}>
+                    <sup
+                      style={{
+                        fontSize: "0.55em",
+                        verticalAlign: "super",
+                        marginLeft: "3px",
+                      }}
+                    >
                       TM
                     </sup>
                   </h3>
                 </div>
                 <p className="tc-solution-description">
-                  No risk solution enables brands to sell b-stock or excess inventory and dropship directly from their warehouse.
+                  No risk solution enables brands to sell b-stock or excess
+                  inventory and dropship directly from their warehouse.
                 </p>
                 <ul className="tc-solution-features">
                   <li>Maintain pricing and channel control</li>
@@ -279,7 +375,12 @@ export default function Home() {
                   <li>Eliminate grey-market and safety risks</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/b-stock-drop-ship" className="tc-btn tc-btn-primary">Learn More →</Link>
+                  <Link
+                    href="/b-stock-drop-ship"
+                    className="tc-btn tc-btn-primary"
+                  >
+                    Learn More →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -289,10 +390,13 @@ export default function Home() {
               <div className="tc-solution-card-inner">
                 <div className="tc-solution-header">
                   <div className="tc-solution-icon">🔄</div>
-                  <h3 className="tc-solution-title">End to End Returns Management</h3>
+                  <h3 className="tc-solution-title">
+                    End to End Returns Management
+                  </h3>
                 </div>
                 <p className="tc-solution-description">
-                  Seamlessly expand your operations team by shipping customer returns directly to us. We&apos;ll handle the rest.
+                  Seamlessly expand your operations team by shipping customer
+                  returns directly to us. We&apos;ll handle the rest.
                   <br />
                   Get the same benefits as Toycycle Resale Direct plus:
                 </p>
@@ -302,7 +406,12 @@ export default function Home() {
                   <li>Resale by Toycycle</li>
                 </ul>
                 <div className="tc-solution-cta">
-                  <Link href="/returns-management" className="tc-btn tc-btn-primary">Learn More →</Link>
+                  <Link
+                    href="/returns-management"
+                    className="tc-btn tc-btn-primary"
+                  >
+                    Learn More →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -313,12 +422,18 @@ export default function Home() {
       {/* Resale-as-a-Service Section */}
       <section className="tc-resale-service-section">
         <div className="tc-content-container">
-          <h2 className="tc-section-title">Looking for a complete resale solution?</h2>
+          <h2 className="tc-section-title">
+            Looking for a complete resale solution?
+          </h2>
           <p className="tc-resale-service-description">
-            We offer a brand-owned Resale-as-a-Service program with white label tech and ops. Turnkey solution, zero grey-market exposure, growth through resale.
+            We offer a brand-owned Resale-as-a-Service program with white label
+            tech and ops. Turnkey solution, zero grey-market exposure, growth
+            through resale.
           </p>
           <div className="tc-resale-service-cta">
-            <Link href="/resale-as-a-service" className="tc-btn tc-btn-primary">Learn more</Link>
+            <Link href="/resale-as-a-service" className="tc-btn tc-btn-primary">
+              Learn more
+            </Link>
           </div>
         </div>
       </section>
@@ -331,24 +446,38 @@ export default function Home() {
             <div className="tc-testimonial-card">
               <div className="tc-testimonial-header">
                 <div className="tc-testimonial-logo">
-                  <Image 
-                    src="/images/partners/PlanToys_Logo.webp" 
-                    alt="PlanToys" 
+                  <Image
+                    src="/images/partners/PlanToys_Logo.webp"
+                    alt="PlanToys"
                     width={120}
                     height={60}
                     className="tc-testimonial-logo-img"
                   />
                 </div>
-                <div className="tc-testimonial-quote">&ldquo;Turnkey Solution&rdquo;</div>
+                <div className="tc-testimonial-quote">
+                  &ldquo;Turnkey Solution&rdquo;
+                </div>
               </div>
               <p className="tc-testimonial-text">
-                &ldquo;Working with Toycycle has been an absolute game-changer for PlanToys. From the very beginning, the onboarding process was seamless and straightforward, allowing us to get started without any delays. Their team excels in clear and consistent communication, keeping us informed every step of the way.
+                &ldquo;Working with Toycycle has been an absolute game-changer
+                for PlanToys. From the very beginning, the onboarding process
+                was seamless and straightforward, allowing us to get started
+                without any delays. Their team excels in clear and consistent
+                communication, keeping us informed every step of the way.
               </p>
               <p className="tc-testimonial-text">
-                The monthly reports on sales and inventory are comprehensive and easy to understand, providing us with valuable insights to make informed decisions on what consumers were looking for in recommerce. What truly sets Toycycle apart is their turnkey solution for giving products a second life. They have an exceptional ability to find these items a new, loving home, ensuring they stay in circulation and continue to bring joy to new families.
+                The monthly reports on sales and inventory are comprehensive and
+                easy to understand, providing us with valuable insights to make
+                informed decisions on what consumers were looking for in
+                recommerce. What truly sets Toycycle apart is their turnkey
+                solution for giving products a second life. They have an
+                exceptional ability to find these items a new, loving home,
+                ensuring they stay in circulation and continue to bring joy to
+                new families.
               </p>
               <p className="tc-testimonial-text">
-                We couldn&apos;t be more pleased with the partnership and look forward to continuing our collaboration.&rdquo;
+                We couldn&apos;t be more pleased with the partnership and look
+                forward to continuing our collaboration.&rdquo;
               </p>
               <div className="tc-testimonial-author">
                 — Rudy Valenta, VP of Americas, PlanToys
@@ -358,21 +487,33 @@ export default function Home() {
             <div className="tc-testimonial-card">
               <div className="tc-testimonial-header">
                 <div className="tc-testimonial-logo">
-                  <Image 
-                    src="/images/partners/Loog_Logo.webp" 
-                    alt="Loog" 
+                  <Image
+                    src="/images/partners/Loog_Logo.webp"
+                    alt="Loog"
                     width={120}
                     height={60}
                     className="tc-testimonial-logo-img"
                   />
                 </div>
-                <div className="tc-testimonial-quote">&ldquo;Win-Win for Everyone&rdquo;</div>
+                <div className="tc-testimonial-quote">
+                  &ldquo;Win-Win for Everyone&rdquo;
+                </div>
               </div>
               <p className="tc-testimonial-text">
-                &ldquo;Working with Toycycle has been a seamless and rewarding experience. Their team is consistently responsive and solution-oriented, making it easy to address any needs we have. The simplicity of their returns process has allowed us to maintain the integrity of our new inventory while adding value to our returned products, ensuring that nothing goes to waste.
+                &ldquo;Working with Toycycle has been a seamless and rewarding
+                experience. Their team is consistently responsive and
+                solution-oriented, making it easy to address any needs we have.
+                The simplicity of their returns process has allowed us to
+                maintain the integrity of our new inventory while adding value
+                to our returned products, ensuring that nothing goes to waste.
               </p>
               <p className="tc-testimonial-text">
-                Our collaboration with Toycycle is truly a win-win for everyone involved. Our customers benefit from knowing their returns are given a second life, we enjoy a streamlined returns process, and Toycycle continues to excel in their mission of sustainability. We couldn&apos;t ask for a better partner in this endeavor.&rdquo;
+                Our collaboration with Toycycle is truly a win-win for everyone
+                involved. Our customers benefit from knowing their returns are
+                given a second life, we enjoy a streamlined returns process, and
+                Toycycle continues to excel in their mission of sustainability.
+                We couldn&apos;t ask for a better partner in this
+                endeavor.&rdquo;
               </p>
               <div className="tc-testimonial-author">
                 — Edgard Barilas, Founder and COO, Loog
@@ -382,21 +523,30 @@ export default function Home() {
             <div className="tc-testimonial-card">
               <div className="tc-testimonial-header">
                 <div className="tc-testimonial-logo">
-                  <Image 
-                    src="/images/partners/Janod_Logo.webp" 
-                    alt="Janod" 
+                  <Image
+                    src="/images/partners/Janod_Logo.webp"
+                    alt="Janod"
                     width={120}
                     height={60}
                     className="tc-testimonial-logo-img"
                   />
                 </div>
-                <div className="tc-testimonial-quote">&ldquo;Positive Impact&rdquo;</div>
+                <div className="tc-testimonial-quote">
+                  &ldquo;Positive Impact&rdquo;
+                </div>
               </div>
               <p className="tc-testimonial-text">
-                &ldquo;We are thrilled to partner with Toycycle. Their dedication to giving toys a second life perfectly aligns with our company&apos;s sustainability efforts. The convenience of their platform makes it easy for us to offer our toys, ensuring a seamless experience.
+                &ldquo;We are thrilled to partner with Toycycle. Their
+                dedication to giving toys a second life perfectly aligns with
+                our company&apos;s sustainability efforts. The convenience of
+                their platform makes it easy for us to offer our toys, ensuring
+                a seamless experience.
               </p>
               <p className="tc-testimonial-text">
-                They handle everything from ordering to selling, making the process hassle-free for us. We look forward to continuing our collaboration with Toycycle and making a positive impact together.&rdquo;
+                They handle everything from ordering to selling, making the
+                process hassle-free for us. We look forward to continuing our
+                collaboration with Toycycle and making a positive impact
+                together.&rdquo;
               </p>
               <div className="tc-testimonial-author">
                 — Sebastian Tolosa, Marketing Coordinator Juratoys
@@ -409,17 +559,24 @@ export default function Home() {
       {/* Final CTA Section */}
       <section className="tc-home-cta">
         <div className="tc-content-container tc-center">
-          <h2 className="tc-cta-title">Start Recovering Value from Your Inventory</h2>
+          <h2 className="tc-cta-title">
+            Start Recovering Value from Your Inventory
+          </h2>
           <p className="tc-cta-text">
-            Join leading toy and baby brands who trust Toycycle to transform returns and excess inventory into revenue—without the risks of liquidation or grey markets.
+            Join leading toy and baby brands who trust Toycycle to transform
+            returns and excess inventory into revenue—without the risks of
+            liquidation or grey markets.
           </p>
           <div className="tc-cta-buttons">
-            <Link href="/contact" className="tc-btn tc-btn-primary">Talk to Our Team</Link>
-            <Link href="#services" className="tc-btn tc-btn-secondary">Explore Solutions</Link>
+            <Link href="/contact" className="tc-btn tc-btn-primary">
+              Talk to Our Team
+            </Link>
+            <Link href="#services" className="tc-btn tc-btn-secondary">
+              Explore Solutions
+            </Link>
           </div>
         </div>
       </section>
-
     </div>
-  )
+  );
 }
