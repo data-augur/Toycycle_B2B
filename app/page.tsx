@@ -4,13 +4,15 @@ import Image from "next/image";
 import { siteUrl, defaultOgImage, mainBrandUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Inventory Recovery for Toy Brands",
+  title: {
+    absolute: "Toy Inventory Recovery & Returns Management | Toycycle",
+  },
   description:
-    "Turn B-stock, returns, and excess inventory into cash—without liquidation or grey market risk. Toycycle Resale Direct™ and returns management for toy brands.",
+    "Turn B-stock, excess, and returned toys into revenue without liquidation or grey-market risk. Safe, traceable resale solutions for toy brands.",
   openGraph: {
-    title: "Inventory Recovery for Toy Brands | Toycycle",
+    title: "Toy Inventory Recovery & Returns Management | Toycycle",
     description:
-      "Turn B-stock, returns, and excess inventory into cash. Solutions for toy brands—no liquidation or grey market risk.",
+      "Turn B-stock, excess, and returned toys into revenue without liquidation or grey-market risk. Safe, traceable resale solutions for toy brands.",
     url: siteUrl,
     images: [
       {
@@ -52,7 +54,74 @@ function buildJsonLd(base: string) {
         "B2B inventory recovery and resale solutions for toy brands.",
       publisher: { "@id": `${mainBrandUrl}/#organization` },
     },
+    getFaqSchema(base),
   ];
+}
+
+function getFaqSchema(pageUrl: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    url: pageUrl,
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Will our toys be sold through liquidation or grey-market channels?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Toycycle provides a brand-safe alternative to toy liquidation. Your B-stock, returns, and excess inventory are sold only through approved channels — never liquidators, brokers, or uncontrolled secondary marketplaces. This protects brand value, pricing integrity, and customer trust.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who controls resale pricing and discounts?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You do. Brands maintain full pricing and discount control across all Toycycle resale programs. We operate within guardrails you approve, ensuring resale supports your primary sales channels rather than competing with them.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do we have to ship inventory to Toycycle?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not necessarily. Toycycle Resale Direct™ lets brands sell B-stock and excess inventory by dropshipping directly from their own warehouse. End-to-End Returns Management allows you to ship customer returns to Toycycle, where we manage QA, resale, and reporting. Many brands start with dropship and expand as volume grows.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does Toycycle handle toy safety, QA, and recalls?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Toycycle is built specifically for toy and children's product resale. Our processes are safety-first, recall-aware, and traceability-driven, ensuring only approved inventory reaches families. This category-specific approach is critical for brands with strict compliance requirements.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What types of toy inventory can be resold?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Toycycle is designed for B-stock and open-box toys, customer returns, and excess or aging inventory. We work with your team to determine eligibility, pricing strategy, and resale positioning for each inventory type.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does Toycycle cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There are no upfront platform fees to get started. Commercial terms vary based on inventory type, volume, and service level — and are structured to recover more value than traditional toy liquidation or wholesale offloading.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is Toycycle different from liquidation or general recommerce platforms?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Liquidation moves inventory quickly, but sacrifices control. Toycycle helps brands recover value from toy returns and excess inventory while maintaining control over pricing, channels, and brand presentation — with no grey-market exposure.",
+        },
+      },
+    ],
+  };
 }
 
 export default function Home() {
@@ -431,8 +500,12 @@ export default function Home() {
             through resale.
           </p>
           <div className="tc-resale-service-cta">
-            <Link href="/resale-as-a-service" className="tc-btn tc-btn-primary">
-              Learn more
+            <Link
+              href="/resale-as-a-service"
+              className="tc-btn tc-btn-primary"
+              title="Learn about Toycycle Resale-as-a-Service for toy brands"
+            >
+              Learn more about Resale as a Service
             </Link>
           </div>
         </div>
@@ -553,6 +626,112 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="tc-faq" aria-labelledby="faq-heading">
+        <div className="tc-content-container tc-center">
+          <h2 id="faq-heading" className="tc-section-title">
+            Frequently Asked Questions
+          </h2>
+          <p className="tc-faq-intro">
+            Questions about toy returns, B-stock resale, or excess inventory
+            recovery? Here&apos;s how Toycycle helps brands recover value without
+            liquidation risk.
+          </p>
+          <div className="tc-faq-grid">
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                Will our toys be sold through liquidation or grey-market
+                channels?
+              </span>
+              <p className="tc-faq-answer">
+                No. Toycycle provides a brand-safe alternative to toy
+                liquidation. Your B-stock, returns, and excess inventory are
+                sold only through approved channels — never liquidators, brokers,
+                or uncontrolled secondary marketplaces. This protects brand
+                value, pricing integrity, and customer trust.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                Who controls resale pricing and discounts?
+              </span>
+              <p className="tc-faq-answer">
+                You do. Brands maintain full pricing and discount control across
+                all Toycycle resale programs. We operate within guardrails you
+                approve, ensuring resale supports your primary sales channels
+                rather than competing with them.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                Do we have to ship inventory to Toycycle?
+              </span>
+              <p className="tc-faq-answer">
+                Not necessarily. Toycycle Resale Direct™ lets brands sell
+                B-stock and excess inventory by dropshipping directly from their
+                own warehouse. End-to-End Returns Management allows you to ship
+                customer returns to Toycycle, where we manage QA, resale, and
+                reporting. Many brands start with dropship and expand as volume
+                grows.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                How does Toycycle handle toy safety, QA, and recalls?
+              </span>
+              <p className="tc-faq-answer">
+                Toycycle is built specifically for toy and children&apos;s
+                product resale. Our processes are safety-first, recall-aware,
+                and traceability-driven, ensuring only approved inventory reaches
+                families. This category-specific approach is critical for brands
+                with strict compliance requirements.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                What types of toy inventory can be resold?
+              </span>
+              <p className="tc-faq-answer">
+                Toycycle is designed for B-stock and open-box toys, customer
+                returns, and excess or aging inventory. We work with your team to
+                determine eligibility, pricing strategy, and resale positioning
+                for each inventory type.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                How much does Toycycle cost?
+              </span>
+              <p className="tc-faq-answer">
+                There are no upfront platform fees to get started. Commercial
+                terms vary based on inventory type, volume, and service level —
+                and are structured to recover more value than traditional toy
+                liquidation or wholesale offloading.
+              </p>
+            </div>
+            <div className="tc-faq-item">
+              <span className="tc-faq-question">
+                How is Toycycle different from liquidation or general recommerce
+                platforms?
+              </span>
+              <p className="tc-faq-answer">
+                Liquidation moves inventory quickly, but sacrifices control.
+                Toycycle helps brands recover value from toy returns and excess
+                inventory while maintaining control over pricing, channels, and
+                brand presentation — with no grey-market exposure.
+              </p>
+            </div>
+          </div>
+          <p className="tc-faq-cta-text">
+            Have a specific returns or excess inventory challenge?{" "}
+            <Link href="/contact" className="tc-faq-cta-link">
+              👉 Talk to our team
+            </Link>{" "}
+            to explore the right recovery model for your brand.
+          </p>
         </div>
       </section>
 

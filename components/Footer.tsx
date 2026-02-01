@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div className="tc-footer-section">
-            <h4 className="tc-footer-heading">Solutions</h4>
+            <h2 className="tc-footer-heading">Solutions</h2>
             <ul className="tc-footer-links">
               <li>
                 <Link href="/b-stock-drop-ship">Toycycle Resale Direct</Link>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div className="tc-footer-section">
-            <h4 className="tc-footer-heading">Company</h4>
+            <h2 className="tc-footer-heading">Company</h2>
             <ul className="tc-footer-links">
               <li>
                 <Link href="/">Home</Link>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className="tc-footer-section">
-            <h4 className="tc-footer-heading">Contact</h4>
+            <h2 className="tc-footer-heading">Contact</h2>
             <ul className="tc-footer-links">
               <li>
                 <a href="mailto:partnerships@toycycle.com">

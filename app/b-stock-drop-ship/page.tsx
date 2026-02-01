@@ -16,9 +16,57 @@ export const metadata: Metadata = {
   alternates: { canonical: `${siteUrl}/b-stock-drop-ship` },
 };
 
+function getFaqSchema(pageUrl: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    url: `${pageUrl}/b-stock-drop-ship`,
+    mainEntity: [
+    {
+      "@type": "Question",
+      name: "How does Toycycle define B-Stock?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "B-stock covers items that cannot be sold as brand new, including open-box returns, minor packaging damage, or older SKU versions that remain perfectly safe and functional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who handles shipping and fulfillment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Partners maintain full control. You fulfill orders directly from your warehouse, allowing you to maintain your specific brand shipping standards.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How is this different from liquidation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Liquidation dumps product at low prices to random buyers. Our Market is a curated, brand-approved channel that maintains value and targets sustainability-minded families.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there a cost to join?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We work on a performance-based model. We only succeed when you move inventory. Contact our team for specific commission and partnership details.",
+      },
+    },
+  ],
+  };
+}
+
 export default function BStockDropShip() {
   return (
     <div className="tc-landing-wrapper">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getFaqSchema(siteUrl)),
+        }}
+      />
       {/* Hero Section */}
       <section className="tc-home-hero">
         <div className="tc-content-container">
