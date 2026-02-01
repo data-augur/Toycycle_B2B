@@ -154,6 +154,13 @@ export default function Header() {
                 >
                   Loog
                 </Link>
+                <Link
+                  href="/success-stories/plantoys"
+                  className="tc-dropdown-item"
+                  onClick={() => setIsSuccessStoriesOpen(false)}
+                >
+                  PlanToys
+                </Link>
               </div>
             )}
           </div>

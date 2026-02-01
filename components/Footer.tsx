@@ -47,7 +47,12 @@ export default function Footer() {
                 <Link href="/contact">Contact</Link>
               </li>
               <li>
-                <Link href="/success-stories/loog">Success Stories</Link>
+                <Link href="/success-stories/loog">Success Stories: Loog</Link>
+              </li>
+              <li>
+                <Link href="/success-stories/plantoys">
+                  Success Stories: PlanToys
+                </Link>
               </li>
               <li>
                 <Link href="/terms-of-service">Terms of Service</Link>
