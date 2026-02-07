@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { siteUrl, defaultOgImage } from "@/lib/seo";
 
 const poppins = Poppins({
@@ -80,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body>
+        <GoogleTagManager />
         <Header />
         <main id="main">{children}</main>
         <Footer />
