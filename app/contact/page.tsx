@@ -162,7 +162,7 @@ export default function ContactPage() {
               {submitStatus === "error" && (
                 <div className="tc-form-error">
                   Something went wrong. Please try again or email us directly at
-                  partnerships@toycycle.com
+                  partnerships@toycycle.co
                 </div>
               )}
 
@@ -176,8 +176,8 @@ export default function ContactPage() {
 
               <p className="tc-form-note">
                 Or reach out directly at{" "}
-                <a href="mailto:partnerships@toycycle.com">
-                  partnerships@toycycle.com
+                <a href="mailto:partnerships@toycycle.co">
+                  partnerships@toycycle.co
                 </a>
               </p>
             </form>

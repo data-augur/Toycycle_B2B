@@ -76,8 +76,8 @@ export default function Footer() {
             <h2 className="tc-footer-heading">Contact</h2>
             <ul className="tc-footer-links">
               <li>
-                <a href="mailto:partnerships@toycycle.com">
-                  partnerships@toycycle.com
+                <a href="mailto:partnerships@toycycle.co">
+                  partnerships@toycycle.co
                 </a>
               </li>
             </ul>

@@ -172,7 +172,7 @@ ${message}
                   <tr>
                     <td style="padding: 30px 40px; background-color: #f9f9f9; border-radius: 0 0 8px 8px; border-top: 1px solid #e0e0e0;">
                       <p style="margin: 0 0 10px; color: #666; font-size: 14px; line-height: 1.6;">
-                        <strong>Questions?</strong> Reply to this email or contact us at <a href="mailto:partnerships@toycycle.com" style="color: #010066; text-decoration: none;">partnerships@toycycle.com</a>
+                        <strong>Questions?</strong> Reply to this email or contact us at <a href="mailto:partnerships@toycycle.co" style="color: #010066; text-decoration: none;">partnerships@toycycle.co</a>
                       </p>
                       <p style="margin: 20px 0 0; color: #999; font-size: 12px; line-height: 1.5;">
                         This is an automated confirmation email. Please do not reply directly to this message.
@@ -214,7 +214,7 @@ In the meantime, feel free to explore our solutions:
 - Returns Management - End-to-end handling of returned inventory
 - Resale as a Service - Fully outsourced resale operations
 
-Questions? Contact us at partnerships@toycycle.com
+Questions? Contact us at partnerships@toycycle.co
 
 This is an automated confirmation email. Please do not reply directly to this message.
 
